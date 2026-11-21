@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio - Hà Văn Mạnh</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            border-bottom: 2px solid #000000;
+            padding: 15px 0;
+            background-color: #ffffff;
+        }
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000000;
+        }
+        nav a {
+            text-decoration: none;
+            color: #000000;
+            margin-left: 20px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #cccccc;
+            gap: 30px;
+            background-color: #ffffff;
+        }
+        .hero-text h1 {
+            font-size: 32px;
+            margin: 10px 0;
+        }
+        .hero-text p {
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        .btn-outline {
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid #000000;
+        }
+        .avatar img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #000000;
+            display: block;
+        }
+        section {
+            padding: 35px 0;
+            border-bottom: 1px solid #cccccc;
+            background-color: #ffffff;
+        }
+        h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+        .box {
+            flex: 1;
+            border: 1px solid #000000;
+            padding: 18px;
+            background-color: #ffffff;
+        }
+        .box h3 {
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 25px 0;
+            font-size: 14px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-bar">
+            <a href="#" class="logo">My Portfolio</a>
+            <nav>
+                <a href="#gioi-thieu">Giới thiệu</a>
+                <a href="#ky-nang">Kỹ năng</a>
+                <a href="#du-an">Dự án</a>
+                <a href="#lien-he">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="hero">
+            <div class="hero-text">
+                <p><strong>Giới thiệu bản thân</strong></p>
+                <h1>Xin chào, mình là Hà Văn Mạnh</h1>
+                <p>Sinh viên năm 2 lớp <strong>66K1-CNTT</strong> tại Trường Đại học Vinh. Hiện đang học tập tìm hiểu và phát triển kĩ năng lập trình C/C++, Cấu trúc dữ liệu & Giải thuật, Cơ sở dữ liệu SQL Server và Lập trình Web.</p>
+                <a href="#du-an" class="btn">Xem dự án</a>
+                <a href="#lien-he" class="btn btn-outline">Liên hệ</a>
+            </div>
+            <div class="avatar">
+                <img src="avt.jpg" alt="Hà Văn Mạnh - 66K1-CNTT">
+            </div>
+        </div>
+
+        <section id="gioi-thieu">
+            <h2>Giới thiệu</h2>
+            <div class="row">
+                <div class="box">
+                    <h3>Mục tiêu học tập</h3>
+                    <p>Nắm vững tư duy giải thuật, cấu trúc dữ liệu nền tảng, thiết kế cơ sở dữ liệu quan hệ chuẩn hóa và xây dựng website hoàn chỉnh từ giao diện đến xử lý dữ liệu.</p>
+                </div>
+                <div class="box">
+                    <h3>Thông tin cá nhân</h3>
+                    <ul>
+                        <li><strong>Họ tên:</strong> Hà Văn Mạnh</li>
+                        <li><strong>Ngày sinh:</strong> 24/12/2007</li>
+                        <li><strong>Lớp:</strong> 66K1-CNTT</li>
+                        <li><strong>Trường:</strong> Trường Đại học Vinh</li>
+                        <li><strong>Địa chỉ:</strong> TP. Vinh, Nghệ An</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="ky-nang">
+            <h2>Kỹ năng chuyên môn</h2>
+            <div class="row">
+                <div class="box">
+                    <h3>Lập trình Web</h3>
+                    <p>HTML, CSS cơ bản, thiết kế giao diện trên Figma và hệ thống quản trị WordPress.</p>
+                </div>
+                <div class="box">
+                    <h3>C/C++ & Giải thuật</h3>
+                    <p>Lập trình hướng đối tượng, đệ quy, sắp xếp, ngăn xếp, danh sách liên kết và duyệt đồ thị BFS.</p>
+                </div>
+                <div class="box">
+                    <h3>Cơ sở dữ liệu</h3>
+                    <p>Thiết kế bảng, khóa chính/khóa ngoại và viết câu lệnh truy vấn SQL trên SQL Server.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="du-an">
+            <h2>Dự án thực hành</h2>
+            <div class="row">
+                <div class="box">
+                    <h3>Website Kindred Shop</h3>
+                    <p>Xây dựng trang web bán phụ kiện thú cưng bằng WordPress kết hợp tùy chỉnh HTML/CSS.</p>
+                </div>
+                <div class="box">
+                    <h3>Bài tập lớn C++ & CTDL</h3>
+                    <p>Cài đặt các thuật toán sắp xếp, đánh giá biểu thức bằng Stack và mô phỏng lan truyền BFS.</p>
+                </div>
+                <div class="box">
+                    <h3>Giao diện Web tĩnh</h3>
+                    <p>Thiết kế và cắt giao diện trang giới thiệu cá nhân chuẩn HTML/CSS thuần.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer id="lien-he">
+            <p><strong>Hà Văn Mạnh — Lớp 66K1-CNTT</strong></p>
+            <p>Trường Đại học Vinh • TP. Vinh, Nghệ An</p>
+        </footer>
+    </div>
+
+</body>
+</html>
